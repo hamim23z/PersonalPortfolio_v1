@@ -1,0 +1,641 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.mainsection {
+    scroll-behavior: smooth;
+}
+
+.mainsection img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: block;
+}
+
+.maintext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.maintext h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.maintext button {
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 12px;
+    color: #fff;
+    background-color: #111;
+    border: 1px solid #111;
+    transition-duration: 0.4s;;
+}
+
+.maintext button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.maintext button a:visited {
+    text-decoration: none;
+}
+
+.maintext button:hover {
+    background-color: darkgray;
+    color: #111;
+}
+
+.maintext button:hover a{
+    color: #111;
+}
+
+
+
+/*About Me Section*/
+#titleaboutmesection {
+    color: rgba(202, 156, 255, 0.863);
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.aboutmesection {
+    padding-bottom: 100px;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.aboutmesection h1 {
+    padding-top: 40px;
+    padding-left: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.aboutmebullets {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+
+/*About Me - Paragraph*/
+.aboutmeparagraph {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 100px;
+    gap: 20px; 
+}
+
+.aboutmeparagraph p {
+    max-width: 600px;
+    margin: 0;
+}
+
+.aboutmeparagraph img {
+    width: 20%;
+    height: auto;
+    object-fit: contain; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*About Me - Boxes Section*/
+.threeboxes {
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 70px;
+}
+
+.threeboxes .box {
+    border: 1px solid #fff;
+    padding: 10px;
+    flex: 1;
+    margin: 0 10px;
+    transition-duration: 0.6s;
+    color: #fff;
+}
+
+.threeboxes .box h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.threeboxes .box:hover {
+    animation: ease-in;
+    background-color: black;
+    border: 1px solid purple;
+}
+
+
+
+
+/*About Me - Work Experience*/
+#titleworkexperience {
+    color: rgba(202, 156, 255, 0.863);
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+.workexperience {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.workexperience .workexp {
+    border: 1px solid #fff;
+    padding: 10px;
+    flex: 1; 
+    margin: 0 10px;
+    transition-duration: 0.6s;
+    color: #fff;
+}
+
+.workexperience .workexp h3 {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.workexperience .workexp h5 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.workexperience .workexp:hover {
+    animation: ease-in;
+    background-color: black;
+    border: 1px solid purple;
+}
+
+
+
+
+
+
+/*Projects Section*/
+.titleprojects {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid purple;
+    color: rgba(202, 156, 255, 0.863);
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+.projectscompleted {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    background-color: #111;
+    padding-bottom: 60px;
+}
+
+.projectscompleted .projects {
+    border: 1px solid #fff;
+    padding: 10px;
+    flex: 1; 
+    margin: 0 10px;
+    transition-duration: 0.6s;
+    color: #fff;
+}
+
+.projectscompleted .projects h3 {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.projectscompleted .projects h5 {
+    text-align: center;
+    padding-bottom: 15px;
+    font: normal;
+}
+
+.projectscompleted .projects:hover {
+    animation: ease-in;
+    background-color: black;
+    border: 1px solid purple;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectscompleted .projects img {
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.projectscompleted .projects button {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #6c0b92;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.projectscompleted .projects button a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/*Tech Stack Section*/
+.services{
+    padding: 20px 0;
+    background-color: #111;
+    color: #fff;
+}
+
+.services .titleservices {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #6c0b92;
+    color: rgba(202, 156, 255, 0.863);
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+.services .box-container .box h3 {
+    color: #fff;
+}
+
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.services .box-container .box{
+    flex: 1 1 15%;
+    max-width: 22%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: var(--light-bg);
+}
+
+.services .box-container .box img{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.services .box-container .box h3{
+    font-size: 15px;
+    color: var(--light-color);
+}
+
+.box {
+    transition: transform 0.4s ease;
+}
+
+.box img {
+    transition: transform 0.4s ease;
+}
+
+.box:hover img {
+    transform: scale(1.3); /* Adjust scaling factor as needed */
+}
+
+.box:hover h3 {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+footer{
+    background-color: #111;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #6c0b92;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+    color: #6c0b92;
+}
+
+.footerBottom{
+    background-color: #111;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+/*Font Changing*/
+.boxtitle {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.linktosite {
+    color: #fff;
+    font-family: 'Kanit';
+    font-weight: bold;
+}
+
+.techstackname {
+    color: #fff;
+    font-family: 'Kanit';
+}
+
+.footertitle {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.footerBottom p {
+    color: #fff;
+    font-family: 'Kanit';
+}
+
+.paragraph {
+    font-family: 'Kanit';
+    font-size: 14px;
+}
+
+.aboutmebullets {
+    font-family: 'Kanit', sans-serif;   
+}
+
+.paragraph2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+}
+
+.paragraph3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.languagesused {
+    font-family: 'Kanit', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Fully Responsive*/
+@media (max-width: 1200px) {
+    .maintext h1 {
+        font-size: 2.5rem;
+    }
+    .maintext button {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    .threeboxes .box,
+    .workexperience .workexp,
+    .projectscompleted .projects {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .maintext h1 {
+        font-size: 2rem;
+    }
+    .maintext button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .threeboxes,
+    .workexperience,
+    .projectscompleted {
+        flex-direction: column;
+        align-items: center;
+    }
+    .threeboxes .box,
+    .workexperience .workexp,
+    .projectscompleted .projects {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .maintext h1 {
+        font-size: 1.5rem;
+    }
+    .maintext button {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .aboutmeparagraph {
+        padding-bottom: 80px;
+    }
+
+    .aboutmeparagraph img {
+        width: 50%; /* Adjust image size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutmeparagraph {
+        padding-bottom: 60px;
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .aboutmeparagraph p {
+        max-width: 90%; /* Increase paragraph width on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .aboutmeparagraph img {
+        width: 80%; /* Increase image size for small screens */
+        max-width: none; /* Remove max-width limitation */
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutmeparagraph {
+        padding-bottom: 40px;
+    }
+
+    .aboutmeparagraph p {
+        font-size: 14px; /* Adjust font size for very small screens */
+    }
+
+    .aboutmeparagraph img {
+        width: 90%; /* Increase image size for extra small screens */
+    }
+}
+
+
+
+/*Webkit Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #6c0b92;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #bf4eec;
+  }
